@@ -9,6 +9,13 @@
 } 
 h1{
     text-align: center;
+    background-color:greenyellow ;
+    font-style: italic;
+    padding: 20px;
+    border-radius: 100%;
+    border-top: 20px solid red;
+    border-bottom: 5px solid blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 h2{
     text-align: center;
