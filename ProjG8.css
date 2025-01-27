@@ -29,6 +29,12 @@ h2{
         margin: 20px;
         
     }
+.logo img{
+    width: 40px;
+    border-radius: 50%;
+    
+}
+
     *img{
         width: 100%;
         
