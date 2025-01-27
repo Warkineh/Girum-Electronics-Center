@@ -4,21 +4,26 @@
   padding-bottom: 10px;
   align-content: center;
 }
-H1{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+H1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .headers ul li a:hover {
   color: red;
 }
+
 .header-links ul li {
   display: inline;
   color: white;
   font-size: 40px;
 }
+
 .header-links ul li a {
   text-decoration: none;
   margin: 10px 20px 5px 10px;
 }
+
 .logo img {
   width: 40px;
   border-radius: 50%;
@@ -42,6 +47,7 @@ H1{
   width: 100%;
   margin: 10px auto;
 }
+
 .Home,
 .About {
   background-color: greenyellow;
@@ -55,6 +61,7 @@ H1{
   display: flex;
   margin: 10px auto;
 }
+
 .Phone,
 .I-Pads {
   background-color: aqua;
@@ -68,6 +75,7 @@ H1{
   width: 100%;
   margin: 10px 10px;
 }
+
 .Glasses,
 .M-Covers,
 .Earphones {
@@ -77,6 +85,7 @@ H1{
   text-align: center;
   margin: 10px;
 }
+
 footer {
   padding: 20px;
   margin: 10px;
@@ -88,7 +97,8 @@ footer {
 }
 
 .address,
-.mphone {
+.mphone,
+.email-address {
   padding: 20px;
   text-align: center;
 }
