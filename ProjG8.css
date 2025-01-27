@@ -1,0 +1,82 @@
+.headers{
+    background-color: rgb(0, 234, 255);
+    margin: 20px; 
+    padding-bottom: 10px;
+    align-content: center;
+}
+.headers ul li a:hover{
+   color: red;
+} 
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+    color: aqua;
+}
+
+    .header-links ul li{
+      
+     display: inline;
+	color:white;
+    font-size: 40px;
+    
+
+
+    }
+    .header-links ul li a{
+        text-decoration: none;
+        margin: 20px;
+        
+    }
+    *img{
+        width: 100%;
+        
+    }
+
+    .images {
+       display: flex;
+       width: 100%;
+        margin: 10px auto;
+    }
+    .image1, .image2{
+        background-color: greenyellow;
+        width: 50%;
+        text-align:center;
+        margin: 20px;
+    }
+    
+
+    .PhoneIpads {
+        width: 100%;
+        display: flex;
+        margin: 10px auto;
+    }
+    .Phone, .I-Pads{
+        background-color: aqua;
+        width: 50%;
+        text-align:center;
+        margin: 20px;  
+    }
+   
+
+    .GlaCovEpho{
+      display: flex;
+       width: 100%;
+       margin: 10px 10px;
+    }
+    .Glasses, .M-Covers, .Earphones{
+        border: 1px;
+        background-color:dodgerblue;
+        width: 33%;
+        text-align: center;
+        margin: 10px;
+    }
+    footer{
+        padding: 1px;
+        margin: 10px;
+        background-color: blue;
+        color: chartreuse;
+        font-size: 50px;
+        text-align: center;
+    }
