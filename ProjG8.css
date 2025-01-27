@@ -85,7 +85,18 @@ H1 {
   text-align: center;
   margin: 10px;
 }
+table,th,td,tr{
+  border-collapse:collapse;
+  border:2px solid rgb(0, 255, 55);
+  background-color: blueviolet;
 
+}
+h3{
+  text-align: center;
+  text-shadow: 200px;
+  color: blue;
+  text-decoration: underline;
+}
 footer {
   padding: 20px;
   margin: 10px;
