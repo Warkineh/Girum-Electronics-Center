@@ -102,3 +102,43 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+
+  background-color: greenyellow;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table th,
+table td {
+  padding: 15px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #333;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: rgb(192, 10, 153);
+}
+
+.Phon {
+  color: rgb(0, 25, 248);
+  text-align: center;
+}
+
+.container {
+  background-image: url(./Images/image.jpg);
+  border-radius: 20px;
+  color: white;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+}
