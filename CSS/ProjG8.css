@@ -34,7 +34,7 @@ H1 {
   height: 265px;
   margin: auto 2px auto 20px;
   text-align: center;
-  background-image: url(./Images/bg-image.png);
+  background-image: url(../Images/bg-image.png);
   color: rgb(136, 0, 255);
 }
 
