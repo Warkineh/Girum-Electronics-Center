@@ -85,11 +85,43 @@ H1 {
   text-align: center;
   margin: 10px;
 }
+.table{
+  background: grey;
+}
 table,th,td,tr{
   border-collapse:collapse;
-  border:2px solid rgb(0, 255, 55);
-  background-color: blueviolet;
+  border:1px solid white;
+  padding: 20px;
+  font-size: 20px;
 
+}
+th{
+  background-color: purple;
+  padding: 30px;
+  text-transform: uppercase;
+  color: azure;
+}
+td:nth-child(5n+1)
+{
+  background: RED;
+  text-align: center;
+}
+td:nth-child(5n+2)
+{
+  background:greenyellow;
+text-align: center;
+}
+td:nth-child(5n+3)
+{
+  background:yellow;
+  text-align: center;
+  
+}
+td:nth-child(5n+4)
+{
+  text-align: center;
+  background:blue;
+ color: white; 
 }
 h3{
   text-align: center;
@@ -100,7 +132,7 @@ h3{
 footer {
   padding: 20px;
   margin: 10px;
-  background-color: rgb(0, 234, 255);
+  background-color: beige;
   color: rgb(16, 12, 247);
   font-size: 25px;
   text-align: center;
