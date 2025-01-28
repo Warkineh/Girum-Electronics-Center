@@ -1,8 +1,8 @@
 .headers {
-  padding: 5px;
-  background-color: rgb(0, 234, 255);
-  padding-bottom: 10px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
   align-content: center;
+  
 }
 
 H1 {
@@ -10,6 +10,7 @@ H1 {
 }
 
 .headers ul li a:hover {
+  background-color: green;
   color: red;
 }
 
@@ -22,20 +23,22 @@ H1 {
 .header-links ul li a {
   text-decoration: none;
   margin: 10px 20px 5px 10px;
+  color: white;
 }
 
 .logo img {
-  width: 40px;
+  width: 35px;
   border-radius: 50%;
 }
 
 .Header-text {
+  color:rgb(3, 176, 250);
+  text-align: center;
   width: 100%;
   height: 265px;
   margin: auto 2px auto 20px;
-  text-align: center;
-  background-image: url(../Images/bg-image.png);
-  color: rgb(136, 0, 255);
+  background-image: url(../Images/bg2.png);
+  font-size: 30px;
 }
 
 *img {
@@ -68,6 +71,10 @@ H1 {
   width: 50%;
   text-align: center;
   margin: 20px;
+}
+.Phone img,
+.I-Pads img{
+  width: 100%;
 }
 
 .GlaCovEpho {
@@ -139,10 +146,7 @@ h3{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-  color: #080808;
-  text-align: center;
-}
+
 
 label {
   display: block;
