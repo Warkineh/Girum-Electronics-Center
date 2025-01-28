@@ -132,16 +132,16 @@ h3{
 
 
 .container {
-  max-width: 400px;
+  max-width: 600px;
   margin: auto;
-  background: white;
+  background-image: url(../Images/image.jpg);
   padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  box-shadow: 10px 2px 5px rgba(24, 241, 4, 0.1);
 }
 
 h1 {
-  color: #333;
+  color: #20df07;
   text-align: center;
 }
 
