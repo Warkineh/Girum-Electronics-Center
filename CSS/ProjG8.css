@@ -106,32 +106,32 @@ table,th,td,tr{
 
 }
 th{
-  background-color: purple;
+  background-color: rgb(110, 38, 110);
   padding: 30px;
   text-transform: uppercase;
-  color: azure;
+  color: rgb(219, 230, 230);
 }
 td:nth-child(5n+1)
 {
-  background: RED;
+  background: rgb(172, 80, 80);
   text-align: center;
 }
 td:nth-child(5n+2)
 {
-  background:greenyellow;
+  background:rgb(172, 80, 80);
 text-align: center;
 }
 td:nth-child(5n+3)
 {
-  background:yellow;
+  background:rgb(172, 80, 80);
   text-align: center;
   
 }
 td:nth-child(5n+4)
 {
   text-align: center;
-  background:rgb(48, 48, 121);
- color: rgb(223, 26, 26); 
+  background:rgb(172, 80, 80);
+ color: rgb(17, 8, 8); 
 }
 h3{
   text-align: center;
