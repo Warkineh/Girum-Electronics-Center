@@ -58,7 +58,10 @@ H1 {
   text-align: center;
   margin: 20px;
 }
-
+.Home img,
+.About img{ 
+width: 100%;
+}
 .PhoneIpads {
   width: 100%;
   display: flex;
