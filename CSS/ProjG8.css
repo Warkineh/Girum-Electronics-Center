@@ -120,56 +120,57 @@ td:nth-child(5n+3)
 td:nth-child(5n+4)
 {
   text-align: center;
-  background:blue;
- color: white; 
+  background:rgb(48, 48, 121);
+ color: rgb(223, 26, 26); 
 }
 h3{
   text-align: center;
   text-shadow: 200px;
-  color: blue;
+  color: rgb(36, 36, 41);
   text-decoration: underline;
 }
 
-
 .container {
-  max-width: 600px;
+  max-width: 400px;
   margin: auto;
-  background-image: url(../Images/image.jpg);
+  background-color: rgba(173, 86, 86, 0.8);
   padding: 20px;
-  border-radius: 25px;
-  box-shadow: 10px 2px 5px rgba(24, 241, 4, 0.1);
+  border-radius: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
-  color: #20df07;
+  color: #080808;
   text-align: center;
 }
 
 label {
   display: block;
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 input {
-  width: 100%;
+  width: 80%;
   padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #02071a;
+  border-radius: 100px;
 }
 
 button {
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 50px;
+  padding: 15px;
   width: 100%;
-  background-color: #007BFF;
-  color: white;
+  background-color: #53505f;
+  color: rgb(224, 219, 235);
   border: none;
-  border-radius: 5px;
+  border-radius: 100px;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #5a9fee;
 }
 
 p {
