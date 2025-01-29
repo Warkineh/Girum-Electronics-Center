@@ -123,7 +123,6 @@ table,th,td,tr{
   border:1px solid white;
   padding: 20px;
   font-size: 20px;
-
 }
 th{
   background-color: rgb(110, 38, 110);
@@ -176,6 +175,7 @@ label {
   display: block;
   margin-top: 5px;
 }
+
 
 input {
   width: 80%;
