@@ -1,10 +1,11 @@
-W L, [1/29/2025 4:57 PM]
+W L, [1/30/2025 12:47 PM]
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="ProjG8.css" />
   <title>Girum Electronics Center</title>
 </head>
@@ -16,33 +17,32 @@ W L, [1/29/2025 4:57 PM]
       <ul>
         <li class="logo"><img src="../Images/Logo.png" alt=""></li>
         <li><a href="#Home">Home</a></li>
-        <li><a href="#About">About</a></li>
+        <li><a href="#about-us">About</a></li>
         <li><a href="#Phoness">Phone</a></li>
         <li><a href="#Ipads">I-Pads</a></li>
         <li><a href="#Glasses">Headphone</a></li>
         <li><a href="#M-Covers">M-Covers</a></li>
         <li><a href="#Earphoness">Earphone</a></li>
+        <li ><a href="#login-button" ><button style="background-color: rgb(233, 3, 164); border-radius: 25px; width: 60px; height: 35px;">Order</button></a></li>
+        
+
       </ul>
     </div>
+
   </header>
 
   <div class="Header-text">
-    <h1><b><em>WEL-COME TO GIRUM ELECTRONICS CENTER OFFICIAL WEBSITE</em> </b></h1>
+    <h2><b><em>WEL-COME TO GIRUM ELECTRONICS CENTER <br> OFFICIAL WEBSITE</em></b></h2>
+    <br> <br> <br> <br>
+    <h3><em>You can order us <a href="#login-button">Online</a></em></h3>
   </div>
-  <div>
-    <table>
-      
-    </table>
-  </div>
-
+  
   <div class="Home">
     <div class="Home" id="Home">
        
       <p>
+        This website can provide detailed information about products, including features, reviews, and guides, helping customers make informed decisions.
         Our Customers can shop from anywhere at any time without the need to visit a physical store, making it easier to compare products and prices.
-
-         The website can provide detailed information about products, including features, reviews, and guides, helping customers make informed decisions.
-        
          It acts as a platform for online sales, enabling customers to purchase directly from the website.
       </p>
     </div>
@@ -119,84 +119,94 @@ W L, [1/29/2025 4:57 PM]
     <h3>MORE INFORMATIN OF OUR PRODUCTS</h3>
   </div>
 
-W L, [1/29/2025 4:57 PM]
+W L, [1/30/2025 12:47 PM]
 <div class="table">
     <table>
       <tr>
-        <th style="width: 30%;">OUR PRODUCT</th>
+        <th style="width: 30%;">OUR PRODUCTS</th>
         <th style="width:10%;">Manufacture date</th>
-        <th style="width: 20%;">Storage</th>
+        <th style="width: 20%;">Type</th>
         <th style="width: 20%;">Price</th>
       </tr>
       <tr>
         
-          <td >S24 ultra</td>
-  <td>2022</td>
-  <td>16GB</td>
-  <td>45000ETB</td>
+          <td >Spark 30C</td>
+  <td>2022 GC</td>
+  <td>Mobile Phone</td>
+  <td>19,500ETB</td>
   </tr>
-        <td>Samsung M15</td>
+        <td>AIR POD</td>
 <td>2023 GC</td>
-<td>128GB</td>
-<td>15000ETB</td>
+<td>Earphone</td>
+<td>1,800ETB</td>
 <tr>
-  <td>Tecno</td>
-<td>2024</td>
-<td>256GB</td>
-<td>50000ETB</td>
+  <td>Travel Charger</td>
+<td>2024 GC</td>
+<td>Charger</td>
+<td>450 ETB</td>
 <tr>
-  <td >Infinix</td>
-<td>2023</td>
-<td>128GB</td>
-<td>10000ETB</td>   
+  <td>Apple Headset</td>
+<td>2023 GC</td>
+<td>Headset</td>
+<td>3,300</td>   
     </table>
   </div>
-  <div class="container">
+  <div class="container" id="login-button">
     <h1>For online orders fill the following information</h1>
     <form id="registrationForm">
-      <label for="username">Username:</label>
-      <input type="text" placeholder="Enter-user-name" , id="username" name="username" required>
+      <label for="username">Name</label>
+      <input type="text" placeholder="Enter-your-name" , id="username" name="username" required>
 
-      <label for="email">Email:</label>
+      <label for="email">Email</label>
       <input type="email" id="email" name="email" placeholder="Enter-your-email" required>
 
-      <label for="Phone">Phone-no:</label>
-      <input type="phone" id="Phonesss " name="phone" placeholder="Enter-your-phone" required>
+      <label for="Address">Your Address</label>
+      <input type="text" id="Address" name="Address" placeholder="Enter-your-Address" required>
 
-      <label for="password">Password:</label>
-      <input type="password" placeholder="Enter-your-password" id="password" name="password" required>
+      <label for="Product">Product</label>
+      <input type="text" id="Product" name="product" placeholder="Enter-name-of-product-you-want" required>
 
-      <button type="submit">Register</button>
+      <label for="receiptInout">Upload Receipt of Payment</label>
+      <input type="file" id="receipt" name="Receipt" placeholder="Upload-Receipt-of-payment" required>
+
+      <button class="registration-button" type="submit">Order</button>
     </form>
-    <p>Already have an account? <a href="login.html">Login here</a></p>
+
   </div>
 
   <footer>
     <div class="footer">
 <div>
   <ul>
-    <h1>Contact</h1>
-    <a href="http://#"><li>Email</li></a>
-    <a href="http://#"><li>Phone</li></a>
-    <a href="http://#"><li>Address</li></a>
+    <h2><u>Contact</u></h2>
+    <li class="emails">Email: <a href="http://#">girumelectronics@gmail.com</li></a>
+    <li>Phone: +251943556287</li>
+    <li>Address: Oromia, Asella</li>
   </ul>
 </div>
+
 <div>
-  <h1>About us</h1>
-  <a href="htt://#"p><li></li></a>
+  <h2 id="about-us"><u>About us<u></h2>
+  <p>
+    At Girum Electronnics Center we envision a world where technology enhances everyday life. <br>
+    Thank you for choosing Girum Electronnics Center. We look forward to serving you!
+  </p>
 </div>
+
 <div>
-<h1>Follow us</h1>
-<li><a href="http://#"><i class="fab fa-facebook"></i></a></li>
+<h2><u>Follow us</u></h2>
+<li class="facebook"><a href="http://#"><i class="fab fa-facebook"></i></a></li>
 <li><a href="http://#"><i class="fab fa-telegram"></i></a></li>
-<li><a href="http://#"><i class="fab fa-facebook"></i></a></li>
+<li class="youtube"><a href="http://#"><i class="fab fa-youtube"></i></a></li>
 <li><a href="http://#"><i class="fab fa-tiktok"></i></a></li>
-
-
-
 </div>
+
     </div>
-     
+  </div>
+    <div class="copyright text-center ">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Girum-Electronics-Center</strong> <span>All Rights Reserved</span></p>
+      <p>developed by: Group 8 </p>
+   
   </footer>
 </body>
 

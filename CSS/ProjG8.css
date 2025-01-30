@@ -1,3 +1,7 @@
+*{
+  padding: 0;
+  margin: 0;
+}
 body{
   background-color: #b5bfe3;
 }
@@ -5,6 +9,12 @@ header{
   top: 0%;
   position: sticky;
   size: 20px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  left: 0;
 }
 .headers {
   width: 100%;
@@ -12,7 +22,7 @@ header{
   align-content: center;
 }
 
-H1 {
+h1 {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -21,20 +31,22 @@ H1 {
   color: black;
 }
 
+
 .header-links ul li {
   display: inline;
   color: white;
   font-size: 40px;
 }
-
 .header-links ul li a {
   text-decoration: none;
-  margin: 10px 20px 5px 10px;
+  margin: 0px 20px 0px 10px;
   color: white;
+  font-size: 20px;
+  text-align: right;
 }
 
 .logo img {
-  width: 35px;
+  width: 20px;
   border-radius: 50%;
 }
 
@@ -45,8 +57,9 @@ H1 {
   height: 380px;
   margin: auto 2px auto 20px;
   background-image: url(../Images/banner.jpg);
-  font-size: 30px;
+  font-size: 25px;
    background-size: cover; 
+   margin-top: 10px;
   
 }
 .Header-text img{
@@ -54,29 +67,23 @@ width: 952px;
 text-align: center;
 }
 
-
-
-
-
 .Home{
   background-image: url(../Images/Home\ bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 10px auto;
-  height: 300px;
+  height: 150px;
   text-align: center;
-  font-size: 40px;
-  
+  font-size: 25px;
 }
+
 .Home img{ 
   width: 100%;
   }
-.About{
-
-}
 
 .Phone,
 .I-Pads, .Charger {
+
   background-color: white;
   width: 33%;
   text-align: center;
@@ -85,6 +92,7 @@ text-align: center;
 
 .Phone img,
 .I-Pads img, .Charger img{
+  transition: 0.4s;
   width: 100%;  
 }
 
@@ -92,6 +100,10 @@ text-align: center;
   width: 100%;
   display: flex;
   margin: 20px;
+}
+.Phone img :hover{
+  /* transition: 0.4s; */
+  transform: scale(1,3);
 }
 
 .GlaCovEpho {
@@ -116,6 +128,7 @@ width: 100%;
 }
 
 .table{
+  margin-bottom: 20px;
   background: grey;
 }
 table,th,td,tr{
@@ -123,34 +136,33 @@ table,th,td,tr{
   border:1px solid white;
   padding: 20px;
   font-size: 20px;
-
 }
 th{
-  background-color: rgb(110, 38, 110);
+  background-color: rgb(252, 172, 0);
   padding: 30px;
   text-transform: uppercase;
-  color: rgb(219, 230, 230);
+  color: rgb(7, 19, 243);
 }
 td:nth-child(5n+1)
 {
-  background: rgb(172, 80, 80);
+  background: rgb(6, 235, 212);
   text-align: center;
 }
 td:nth-child(5n+2)
 {
-  background:rgb(172, 80, 80);
+  background:rgb(29, 209, 13);
 text-align: center;
 }
 td:nth-child(5n+3)
 {
-  background:rgb(172, 80, 80);
+  background:rgb(18, 68, 138);
   text-align: center;
   
 }
 td:nth-child(5n+4)
 {
   text-align: center;
-  background:rgb(172, 80, 80);
+  background:rgb(191, 22, 152);
  color: rgb(17, 8, 8); 
 }
 
@@ -162,9 +174,10 @@ h3{
 }
 
 .container {
+  text-align: center;
   max-width: 400px;
   margin: auto;
-  background-color: rgba(173, 86, 86, 0.8);
+  background-color: rgba(8, 226, 255, 0.8);
   padding: 20px;
   border-radius: 100px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -177,6 +190,7 @@ label {
   margin-top: 5px;
 }
 
+
 input {
   width: 80%;
   padding: 10px;
@@ -186,16 +200,17 @@ input {
   border-radius: 100px;
 }
 
-button {
+ .registration-button  {
+  justify-content: center;
   margin-top: 50px;
   padding: 15px;
-  width: 100%;
-  background-color: #53505f;
-  color: rgb(224, 219, 235);
+  width: 50%;
+  background-color: #fd00ec;
+  color: rgb(25, 7, 222);
   border: none;
   border-radius: 100px;
   cursor: pointer;
-}
+} 
 
 button:hover {
   background-color: #5a9fee;
@@ -215,17 +230,32 @@ a:hover {
 .prices{
   color:rgb(5, 255, 5);
 }
-.footer {
-  padding: 20px;
+
+.footer  {
   margin: 10px;
-  background-color: black;
-  color: rgb(16, 12, 247);
-  font-size: 25px;
-  text-align: center;
+  background-color: goldenrod;
+  color: white;
+  font-size: 20px;
   display: flex;
+  
 }
 
-.footer div{
+.footer div ul li{
+  text-decoration: none;
+  list-style: none;
   text-align: center;
-  margin: 50px;
 }
+
+.footer div ul a{
+  color: greenyellow;
+  list-style: none;
+  }
+
+  .footer div{
+    width: 33%;
+    margin: 20px;
+    text-decoration: none;
+  }
+  .footer ul li{
+list-style: none;
+  }
