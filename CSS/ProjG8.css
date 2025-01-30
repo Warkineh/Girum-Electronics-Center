@@ -1,8 +1,15 @@
+body{
+  background-color: #b5bfe3;
+}
+header{
+  top: 0%;
+  position: sticky;
+  size: 20px;
+}
 .headers {
   width: 100%;
   background-color: rgb(0, 0, 0);
   align-content: center;
-  
 }
 
 H1 {
@@ -10,8 +17,8 @@ H1 {
 }
 
 .headers ul li a:hover {
-  background-color: green;
-  color: red;
+  background-color:white;
+  color: black;
 }
 
 .header-links ul li {
@@ -32,52 +39,59 @@ H1 {
 }
 
 .Header-text {
-  color:rgb(6, 44, 66);
+  color:rgb(240, 210, 14);
   text-align: center;
   width: 100%;
-  height: 265px;
+  height: 380px;
   margin: auto 2px auto 20px;
-  background-image: url(../Images/bg2.png);
+  background-image: url(../Images/banner.jpg);
   font-size: 30px;
+   background-size: cover; 
+  
+}
+.Header-text img{
+width: 952px;
+text-align: center;
 }
 
-*img {
-  width: 100%;
-}
 
-.Home-About {
-  display: flex;
-  width: 100%;
+
+
+
+.Home{
+  background-image: url(../Images/Home\ bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 10px auto;
-}
-
-.Home,
-.About {
-  background-color: rgb(87, 50, 1);
-  width: 40%;
+  height: 300px;
   text-align: center;
-  margin: 20px;
+  font-size: 40px;
+  
 }
-.Home img,
-.About img{ 
-width: 100%;
-}
-.PhoneIpads {
+.Home img{ 
   width: 100%;
-  display: flex;
-  margin: 10px auto;
+  }
+.About{
+
 }
 
 .Phone,
-.I-Pads {
-  background-color: aqua;
-  width: 50%;
+.I-Pads, .Charger {
+  background-color: white;
+  width: 33%;
   text-align: center;
   margin: 20px;
 }
+
 .Phone img,
-.I-Pads img{
+.I-Pads img, .Charger img{
+  width: 100%;  
+}
+
+.PhoneIpads {
   width: 100%;
+  display: flex;
+  margin: 20px;
 }
 
 .GlaCovEpho {
@@ -90,11 +104,17 @@ width: 100%;
 .M-Covers,
 .Earphones {
   border: 1px;
-  background-color: dodgerblue;
+  background-color: white;
   width: 33%;
   text-align: center;
   margin: 10px;
 }
+.Glasses img,
+.M-Covers img,
+.Earphones img{
+width: 100%;
+}
+
 .table{
   background: grey;
 }
@@ -133,6 +153,7 @@ td:nth-child(5n+4)
   background:rgb(172, 80, 80);
  color: rgb(17, 8, 8); 
 }
+
 h3{
   text-align: center;
   text-shadow: 200px;
@@ -191,22 +212,20 @@ a {
 a:hover {
   text-decoration: underline;
 }
-footer {
+.prices{
+  color:rgb(5, 255, 5);
+}
+.footer {
   padding: 20px;
   margin: 10px;
-  background-color: rgb(235, 235, 42);
+  background-color: black;
   color: rgb(16, 12, 247);
   font-size: 25px;
   text-align: center;
   display: flex;
 }
 
-.address,
-.mphone,
-.email-address {
-  padding: 20px;
+.footer div{
   text-align: center;
-}
-body{
-  background-color: #02071a;
+  margin: 50px;
 }
