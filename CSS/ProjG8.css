@@ -17,17 +17,13 @@ header{
 
   top: 0%;
   position: sticky;
-  size: 20px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  padding-left: 30px;
-  justify-content: center;
+   display: grid;
+  padding-left: 20px;
    
 }
 .headers {
   width: 100%;
-  background-color: rgb(0, 0, 0);
+  background-color:rgb(31, 33, 73);
   align-content: center;
 }
 
@@ -40,6 +36,16 @@ h1 {
   color: black;
 }
 
+.header-links{
+display: flex;
+justify-content: space-between;
+}
+.logo-wrapper{
+  width: 30%;
+}
+.ul-wrapper{
+  width: 60%;
+}
 
 .header-links ul li {
   display: inline;
@@ -53,17 +59,19 @@ h1 {
   font-size: 20px;
   text-align: left;
 }
-
 .logo img {
-  width: 20px;
-  border-radius: 50%;
+  width: 30px;
+  border-radius: 25%;
+}
+.logo{
+  padding: 12px;
 }
 
 /* Home page style */
 .Header-text {
   color:rgb(240, 210, 14);
   text-align: center;
-  width: 100%;
+  width: 95%;
   height: 380px;
   margin: auto 2px auto 20px;
   background-image: url(../Images/banner.jpg);
@@ -78,6 +86,7 @@ text-align: center;
 }
 
 .Home{
+  width: 95%;
   background-image: url(../Images/Home\ bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -87,9 +96,6 @@ text-align: center;
   font-size: 25px;
 }
 
-.Home img{ 
-  width: 100%;
-  }
 
 /*   style of phone, Airpod and Charger page */
 .Phone,
@@ -108,9 +114,9 @@ text-align: center;
 }
 
 .PhoneIpads {
-  width: 100%;
+  width: 95%;
   display: flex;
-  margin: 20px;
+  margin: auto;
 }
 
 .PhoneIpads :hover{
@@ -120,8 +126,8 @@ transform: translateY(-10px);
 /* Style of Headset, Cover and Earphone */
 .GlaCovEpho {
   display: flex;
-  width: 100%;
-  margin: 10px 10px;
+  width: 95%;
+  margin: auto;
 }
 
 .GlaCovEpho :hover{
@@ -138,7 +144,6 @@ transform: translateY(-10px);
   margin: 10px;
 }
 
-
 .Glasses img,
 .M-Covers img,
 .Earphones img{
@@ -147,41 +152,41 @@ width: 100%;
 
 /* style of table */
 .table{
+  width: 90%;
+  margin: auto;
   margin-bottom: 20px;
-  background: grey;
 }
 table,th,td,tr{
-  border-collapse:collapse;
   border:1px solid white;
   padding: 20px;
   font-size: 20px;
 }
 th{
-  background-color: rgb(252, 172, 0);
+  background-color: rgb(83, 253, 16);
   padding: 30px;
   text-transform: uppercase;
   color: rgb(7, 19, 243);
 }
 td:nth-child(5n+1)
 {
-  background: rgb(6, 235, 212);
+  background: rgb(184, 11, 184);
   text-align: center;
 }
 td:nth-child(5n+2)
 {
-  background:rgb(29, 209, 13);
+  background:rgb(231, 236, 225);
 text-align: center;
 }
 td:nth-child(5n+3)
 {
-  background:rgb(18, 68, 138);
+  background:rgb(6, 219, 235);
   text-align: center;
   
 }
 td:nth-child(5n+4)
 {
   text-align: center;
-  background:rgb(191, 22, 152);
+  background:rgb(221, 206, 1);
  color: rgb(17, 8, 8); 
 }
 
