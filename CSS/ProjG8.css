@@ -231,31 +231,35 @@ a:hover {
   color:rgb(5, 255, 5);
 }
 
-.footer  {
-  margin: 10px;
-  background-color: goldenrod;
-  color: white;
-  font-size: 20px;
+footer{
+  margin-top: 20px;
+  padding: 40px 4rem;
+  background: rgb(31, 33, 73);
   display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+
+}
+.col h3{
+  font-weight: 700;
+}
+.col p{
+  font-size: 13px;
+  color: white;
   
 }
-
-.footer div ul li{
-  text-decoration: none;
-  list-style: none;
-  text-align: center;
+.col-1{
+  width: 300px;
+}
+.col h3{
+  padding-bottom: 20px;
+}
+.col li{
+  color: white;
+}
+footer h3{
+  color: rgb(168, 13, 230);
 }
 
-.footer div ul a{
-  color: greenyellow;
-  list-style: none;
-  }
-
-  .footer div{
-    width: 33%;
-    margin: 20px;
-    text-decoration: none;
-  }
-  .footer ul li{
-list-style: none;
-  }
