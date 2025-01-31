@@ -1,29 +1,29 @@
-
 /* styles for the whole  */
 
-*{
+* {
   padding: 0;
   margin: 0;
 }
 
 /* body style */
-body{
+body {
   background-color: #b5bfe3;
 
 }
 
 /* headers style */
-header{
+header {
 
   top: 0%;
   position: sticky;
-   display: grid;
+  display: grid;
   padding-left: 20px;
-   
+
 }
+
 .headers {
   width: 100%;
-  background-color:rgb(31, 33, 73);
+  background-color: rgb(31, 33, 73);
   align-content: center;
 }
 
@@ -32,18 +32,20 @@ h1 {
 }
 
 .headers ul li a:hover {
-  background-color:white;
+  background-color: white;
   color: black;
 }
 
-.header-links{
-display: flex;
-justify-content: space-between;
+.header-links {
+  display: flex;
+  justify-content: space-between;
 }
-.logo-wrapper{
+
+.logo-wrapper {
   width: 30%;
 }
-.ul-wrapper{
+
+.ul-wrapper {
   width: 60%;
 }
 
@@ -52,6 +54,7 @@ justify-content: space-between;
   color: white;
   font-size: 40px;
 }
+
 .header-links ul li a {
   text-decoration: none;
   margin: 0px 20px 0px 10px;
@@ -59,33 +62,37 @@ justify-content: space-between;
   font-size: 20px;
   text-align: left;
 }
+
 .logo img {
   width: 30px;
   border-radius: 25%;
 }
-.logo{
+
+.logo {
   padding: 12px;
 }
 
 /* Home page style */
 .Header-text {
-  color:rgb(240, 210, 14);
+  color: rgb(240, 210, 14);
   text-align: center;
   width: 95%;
   height: 380px;
   margin: auto 2px auto 20px;
   background-image: url(../Images/banner.jpg);
   font-size: 25px;
-   background-size: cover; 
-   margin-top: 10px;
-  
-}
-.Header-text img{
-width: 952px;
-text-align: center;
+  background-size: cover;
+  margin-top: 10px;
+
 }
 
-.Home{
+.Header-text img {
+  width: 952px;
+  text-align: center;
+}
+
+.Home {
+  display: flex;
   width: 95%;
   background-image: url(../Images/Home\ bg.jpg);
   background-repeat: no-repeat;
@@ -96,10 +103,10 @@ text-align: center;
   font-size: 25px;
 }
 
-
 /*   style of phone, Airpod and Charger page */
 .Phone,
-.I-Pads, .Charger {
+.I-Pads,
+.Charger {
 
   background-color: white;
   width: 33%;
@@ -108,9 +115,10 @@ text-align: center;
 }
 
 .Phone img,
-.I-Pads img, .Charger img{
+.I-Pads img,
+.Charger img {
   transition: 0.4s;
-  width: 100%;  
+  width: 100%;
 }
 
 .PhoneIpads {
@@ -119,8 +127,8 @@ text-align: center;
   margin: auto;
 }
 
-.PhoneIpads :hover{
-transform: translateY(-10px);
+.PhoneIpads :hover {
+  transform: translateY(-10px);
 }
 
 /* Style of Headset, Cover and Earphone */
@@ -130,7 +138,7 @@ transform: translateY(-10px);
   margin: auto;
 }
 
-.GlaCovEpho :hover{
+.GlaCovEpho :hover {
   transform: translateY(-10px);
 }
 
@@ -146,51 +154,56 @@ transform: translateY(-10px);
 
 .Glasses img,
 .M-Covers img,
-.Earphones img{
-width: 100%;
+.Earphones img {
+  width: 100%;
 }
 
 /* style of table */
-.table{
+.table {
   width: 90%;
   margin: auto;
   margin-bottom: 20px;
 }
-table,th,td,tr{
-  border:1px solid white;
+
+table,
+th,
+td,
+tr {
+  border: 1px solid white;
   padding: 20px;
   font-size: 20px;
 }
-th{
+
+th {
   background-color: rgb(83, 253, 16);
   padding: 30px;
   text-transform: uppercase;
   color: rgb(7, 19, 243);
 }
-td:nth-child(5n+1)
-{
+
+td:nth-child(5n+1) {
   background: rgb(184, 11, 184);
   text-align: center;
 }
-td:nth-child(5n+2)
-{
-  background:rgb(231, 236, 225);
-text-align: center;
-}
-td:nth-child(5n+3)
-{
-  background:rgb(6, 219, 235);
+
+td:nth-child(5n+2) {
+  background: rgb(231, 236, 225);
   text-align: center;
-  
-}
-td:nth-child(5n+4)
-{
-  text-align: center;
-  background:rgb(221, 206, 1);
- color: rgb(17, 8, 8); 
 }
 
-h3{
+td:nth-child(5n+3) {
+  background: rgb(6, 219, 235);
+  text-align: center;
+
+}
+
+td:nth-child(5n+4) {
+  text-align: center;
+  background: rgb(221, 206, 1);
+  color: rgb(17, 8, 8);
+}
+
+h3 {
   text-align: center;
   text-shadow: 200px;
   color: rgb(36, 36, 41);
@@ -225,7 +238,7 @@ input {
   border-radius: 100px;
 }
 
- .registration-button  {
+.registration-button {
   justify-content: center;
   margin-top: 50px;
   padding: 15px;
@@ -235,7 +248,7 @@ input {
   border: none;
   border-radius: 100px;
   cursor: pointer;
-} 
+}
 
 button:hover {
   background-color: #5a9fee;
@@ -252,8 +265,9 @@ a {
 a:hover {
   text-decoration: underline;
 }
-.prices{
-  color:rgb(5, 255, 5);
+
+.prices {
+  color: rgb(5, 255, 5);
 }
 
 /* style of footer */
@@ -268,29 +282,35 @@ footer {
   flex-wrap: wrap;
 
 }
-.col h3{
+
+.col h3 {
   font-weight: 700;
 }
-.col p{
+
+.col p {
   font-size: 13px;
   color: white;
-  
+
 }
-.col-1{
+
+.col-1 {
   width: 300px;
 }
-.col h3{
+
+.col h3 {
   padding-bottom: 20px;
 }
-.col li{
+
+.col li {
   color: white;
 }
-footer h3{
+
+footer h3 {
   color: rgb(168, 13, 230);
 }
-.Copyright{
+
+.Copyright {
   width: 100%;
   text-align: left;
   color: rgb(241, 237, 1);
 }
-
