@@ -206,8 +206,12 @@ td:nth-child(5n+4) {
 h3 {
   text-align: center;
   text-shadow: 200px;
-  color: rgb(36, 36, 41);
-  text-decoration: underline;
+  color: rgb(0, 0, 0);
+}
+
+.slogan{
+color: #eea406;
+text-decoration: none;
 }
 
 /* style for order form */
@@ -307,6 +311,15 @@ footer {
 
 footer h3 {
   color: rgb(168, 13, 230);
+  text-decoration: underline;
+}
+
+footer p {
+  color: white;
+}
+
+footer div li a{
+  text-decoration: none;
 }
 
 .Copyright {
