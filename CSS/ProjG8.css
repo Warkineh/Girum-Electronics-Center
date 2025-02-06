@@ -18,6 +18,7 @@ header {
   position: sticky;
   display: grid;
   padding-left: 20px;
+   z-index: 1000;
 
 }
 
@@ -90,7 +91,101 @@ h1 {
   width: 952px;
   text-align: center;
 }
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size:contain;
+  background-position: center;
+  opacity: 0;
+  animation: slideAnimation 20s infinite;
+}
+.slide1 {
+  background-image: url("../Images/home\ 1.jpg");
+  animation-delay: 0s;
+}
+.slide2 {
+  background-image: url("../Images/sparkk1.jpg");
+  animation-delay: 4s;
+}
+.slide3 {
+  background-image: url("../Images/apple.jpg");
+  animation-delay: 8s;
+}
+.slide4 {
+  background-image: url("../Images/head\ set.jpg");
+  animation-delay: 12s;
+}
+.slide5 {
+  background-image: url("../Images/Earphone.jpg");
+  animation-delay: 16s;
+}
 
+/* Animate slides */
+@keyframes slideAnimation {
+  0% {
+    opacity: 0;
+  }
+  4% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  24% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* Hero Content */
+.hero {
+  height: 100vh; /* Full height of the viewport */
+  background-image: url("your-image-url.jpg"); /* Replace with your image URL */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the image */
+  display: flex; /* Center content vertically */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Center items horizontally */
+  color: white; /* Text color */
+  text-align: center; /* Center text */
+}
+.hero-content {
+  height: 100%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-top: 20%;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin: 10px 0 0;
+  opacity: 0.9;
+}
 .Home {
   display: flex;
   width: 95%;
@@ -103,10 +198,69 @@ h1 {
   font-size: 25px;
 }
 
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Left Side: Image */
+.about-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+/* Right Side: Text */
+.about-content {
+  flex: 1;
+  padding: 30px 40px;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #0056b3;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-content p {
+  margin-bottom: 20px;
+  font-family: century;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.about-content .highlight {
+  color: #e63946;
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
 /*   style of phone, Airpod and Charger page */
 .Phone,
-.I-Pads,
-.Charger {
+.I-Samsung,
+.I-phone {
 
   background-color: white;
   width: 33%;
@@ -115,8 +269,8 @@ h1 {
 }
 
 .Phone img,
-.I-Pads img,
-.Charger img {
+.I-Samsung img,
+.I-phone img {
   transition: 0.4s;
   width: 100%;
 }
@@ -221,7 +375,7 @@ text-decoration: none;
   margin: auto;
   background-color: rgba(8, 226, 255, 0.8);
   padding: 20px;
-  border-radius: 100px;
+  border-radius:50px 0 50px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -323,7 +477,9 @@ footer div li a{
 }
 
 .Copyright {
-  width: 100%;
-  text-align: left;
-  color: rgb(241, 237, 1);
+background-color: #f17209; /* Light background color */
+  border-top: 1px solid #e9ecef; /* Add border on top */
+  padding: 10px 0; /* Add padding */
+  text-align: center;
+  border-radius: 5px; /* Add border radius */
 }
