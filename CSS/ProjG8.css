@@ -119,7 +119,7 @@ h1 {
   animation-delay: 0s;
 }
 .slide2 {
-  background-image: url("../Images/sparkk1.jpg");
+  background-image: url("../Images/banner.jpg");
   animation-delay: 4s;
 }
 .slide3 {
@@ -257,7 +257,17 @@ h1 {
 }
 
 
-/*   style of phone, Airpod and Charger page */
+/* style of phones page */
+.Phones-page {
+  width: 95%;
+  display: flex;
+  margin: auto;
+}
+
+.Phones-page :hover {
+  transform: translateY(-10px);
+}
+
 .Phone,
 .I-Samsung,
 .I-phone {
@@ -275,15 +285,7 @@ h1 {
   width: 100%;
 }
 
-.PhoneIpads {
-  width: 95%;
-  display: flex;
-  margin: auto;
-}
 
-.PhoneIpads :hover {
-  transform: translateY(-10px);
-}
 
 /* Style of Headset, Cover and Earphone */
 .GlaCovEpho {
