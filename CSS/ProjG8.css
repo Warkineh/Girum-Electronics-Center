@@ -261,28 +261,39 @@ h1 {
 .Phones-page {
   width: 95%;
   display: flex;
+  justify-content: space-around;
   margin: auto;
 }
 
-.Phones-page :hover {
+.phone-card:hover {
   transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.Phone,
-.I-Samsung,
-.I-phone {
+.phone-card {
+  background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 33%;
+    text-align: center;
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  background-color: white;
-  width: 33%;
-  text-align: center;
-  margin: 20px;
 }
 
-.Phone img,
-.I-Samsung img,
-.I-phone img {
+.phone-card img {
   transition: 0.4s;
   width: 100%;
+}
+
+.phone-image {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.phone-card:hover .phone-image {
+  transform: scale(1.05);
 }
 
 
