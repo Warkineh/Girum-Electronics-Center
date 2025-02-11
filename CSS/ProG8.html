@@ -213,27 +213,56 @@
 <br>
 
   <!-- form of the order page-->
-  <div class="container" id="login-button">
-    <h1>For online orders fill the following information</h1>
-    <form id="registrationForm">
-      <label for="username">Name</label>
-      <input type="text" placeholder="Enter-your-name" , id="username" name="username" required>
+ <div class="container" id="login-button">  
+    <h1>For online orders fill the following information</h1>  
+    <form id="registrationForm">  
+      <label for="username">Name</label>  
+      <input type="text" placeholder="Enter-your-name" id="username" name="username" required>  
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter-your-email" required>
+      <label for="email">Email</label>  
+      <input type="email" id="email" name="email" placeholder="Enter-your-email" required>  
 
-      <label for="Address">Your Address</label>
-      <input type="text" id="Address" name="Address" placeholder="Enter-your-Address" required>
+      <label for="Address">Your Address</label>  
+      <input type="text" id="Address" name="Address" placeholder="Enter-your-Address" required>  
 
-      <label for="Product">Product</label>
-      <input type="text" id="Product" name="product" placeholder="Enter-name-of-product-you-want" required>
+      <label for="Product">Product</label>  
+      <input type="text" id="Product" name="product" placeholder="Enter-name-of-product-you-want" required>  
 
-      <label for="receiptInout">Upload Receipt of Payment</label>
-      <input type="file" id="receipt" name="Receipt" placeholder="Upload-Receipt-of-payment" required>
+      <label for="receipt">Upload Receipt of Payment</label>  
+      <input type="file" id="receipt" name="Receipt" required>  
 
-      <button class="registration-button" type="submit">Order</button>
-    </form>
-  </div>
+      <button class="registration-button" type="submit">Order</button>  
+    </form>  
+    <div id="message"></div>  
+</div>  
+
+<script>  
+    document.getElementById('registrationForm').addEventListener('submit', function(event) {  
+        event.preventDefault(); // Prevent the default form submission  
+
+        // Get values from the form  
+        const username = document.getElementById('username').value;  
+        const email = document.getElementById('email').value;  
+        const address = document.getElementById('Address').value;  
+        const product = document.getElementById('Product').value;  
+        const receipt = document.getElementById('receipt').files[0];  
+
+        // Basic validation (you can expand this as needed)  
+        if(username && email && address && product && receipt) {  
+            // Simulate a successful submission  
+            const messageDiv = document.getElementById('message');  
+            messageDiv.innerHTML = `<p style="color: green;">Thank you ${username}, your order for ${product} has been placed successfully!</p>`;  
+            messageDiv.style.display = 'block';  
+
+            // Optionally reset the form  
+            document.getElementById('registrationForm').reset();  
+        } else {  
+            const messageDiv = document.getElementById('message');  
+            messageDiv.innerHTML = `<p style="color: red;">Please fill out all fields and upload your receipt.</p>`;  
+            messageDiv.style.display = 'block';  
+        }  
+    });  
+</script>
 
   <section>
 
