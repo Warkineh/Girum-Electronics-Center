@@ -1,0 +1,93 @@
+/* Basic body styling to remove default margins */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Game container styling */
+#game-container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    font-size: 18px;
+}
+
+/* Timer styling */
+#timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: #dc3545; /* Red color for urgency */
+    margin-bottom: 10px;
+}
+
+/* Problem styling */
+#problem {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Options styling */
+.options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.option {
+    padding: 10px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #0056b3;
+}
+
+/* Result styling */
+#result {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Continue section styling */
+#continue {
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+}
+
+#continue-text {
+    font-size: 20px;
+    color: #333;
+}
+
+#yes-button, #no-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#yes-button {
+    background-color: #28a745; /* Green for Yes */
+}
+
+#no-button {
+    background-color: #dc3545; /* Red for No */
+}

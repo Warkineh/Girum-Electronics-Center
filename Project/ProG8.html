@@ -18,31 +18,28 @@
     <section class="header-links">
 
       <div class="logo-wrapper">
-        <li class="logo"><img src="../Images/Logo.png" alt=""></li>
+        <li class="logo"><img src="./Images/Logo.png" alt=""></li>
         
 
       </div>
       <ul class="ul-wrapper">
         <li><a href="#Home">Home</a></li>
         <li><a href="#About">About</a></li>
-        <li><a href="#Phoness">Phone</a></li>
-        <li><a href="#Ipads">I-Pads</a></li>
-        <li><a href="#Glasses">Headphone</a></li>
-        <li><a href="#M-Covers">M-Covers</a></li>
-        <li><a href="#Earphoness">Earphone</a></li>
+        <li><a href="#Phones">Phones</a></li>
+        <li><a href="#Earphones">Earphones</a></li>
+        <li><a href="#Others">Other-Products</a></li>
+        <li><a href="#Table">Info-Table</a></li>
+       
         <li class="order-button"><a href="#login-button"><button
               style="background-color: rgb(233, 3, 164); border-radius: 25px; width: 60px; height: 35px;">Order</button></a>
         </li>
         <ul>
-
-
     </section>
   </header>
-  <br>
-  <br>
+
 
   <!--home page and header text-->
-      <div class="hero-section">
+      <div class="hero-section" id="Home">
         <div class="slider">
           <div class="slide slide1"></div>
           <div class="slide slide2"></div>
@@ -66,10 +63,10 @@
   <div class="about-container">
     <!-- Left Side: Image -->
     <div class="about-image">
-      <img src="../Images/iPhone.jpg" alt="Optical Pictures Studio in Assella">
+      <img src="./Images/iPhone.jpg" alt="Optical Pictures Studio in Assella">
     </div>
     <!-- Right Side: Text -->
-    <div class="about-content">
+    <div class="about-content" id="About">
       <h2>About Girum Electronics Center</h2>
       <p>
         This website can provide detailed information about products, including features, reviews, and guides, helping
@@ -88,97 +85,116 @@
 </section>
 <br>
 <br>
- <h1 style="text-align: center;">Phones</h1>
-  <br>
 
-  <!--Phones Page-->
-  <div class="Phones-page" id="Phoness">
 
-    <div class="phone-card"><img src="../Images/iPhone.jpg" alt="I-phone">
-      <b>iPhone 14 Pro Max</b>
-      <p>ይህ ቄንጠኛ፣ ይፋዊ የሳምሰንግ Travel Charger in White የPPS ሰርተፍኬት አለው እና አስደናቂ 35W USB-C እና 15W USB-A ኃይል መሙላት ይችላል። ..
+  <!--Products Section-->
+  <section class="products-section">
+    <h2 class="section-title">Our Phones</h2>
+    <div class="Phones-page" id="Phones">
+      <div class="product-card">
+        <img src="./Images/iPhone.jpg" alt="I-phone">
+        <b>iPhone 14 Pro Max</b>
+        <p>Latest smartphones from top brands.</p>
+        <p class="prices"><b>PRICE:118,000 ETB</b></p>
+        </p>
+      </div>
+  
+      <div class="product-card">
+        <img src="./Images/sumsing.jpg" alt="Samsung" />
+        <p>
+          <b>Samsung Galaxy A54 5G </b><br />
+          Storage: 256GB, RAM: 8GB<br/>
+          Operating System: Android 13 <br>
+        <p class="prices"><b>PRICE:26,500 ETB</b></p>
+        </p>
+      </div>
 
-      <p class="prices"><b>PRICE:450 ETB</b></p>
-      </p>
+      <div class="product-card">
+        <img src="./Images/sparkk1.jpg" alt="Phones" />
+        <p><b>Spark 30C</b><br />
+          storage 128/256 Gb<br />
+         front camera 50 MP<br />
+          
+        <p class="prices"><b>PRICE:<s>20,000 ETB</s> 19,500 ETB</b></p>
+      </div>
+
     </div>
+  </section>
 
-    <div class="phone-card" id="Samsung">
-      <img src="../Images/sumsing.jpg" alt="Samsung" />
-      <p>
-        <b>Samsung Galaxy A54 5G </b><br />
-        Display: 6.40-inch (2340x1080)<br />
-        Storage: 256GB <br>
-        RAM: 8GB<br />
-        Battery: 5000mAh with 25W charging support<br>
-        Operating System: Android 13 <br>
-      <p class="prices"><b>PRICE:26,500 ETB</b></p>
-      </p>
+  <!-- Earphones Section -->
+   <section class="products-section" id="Earphones">
+    <h2 class="section-title">Earphones</h2>
+    <div class="Earphones-page" id="Earphones">
+      <div class="product-card">
+        <img src="./Images/Airpaad.jpg" alt="Headphones">
+        <h3>Airpod</h3>
+        <p>Wireless Earphones</p>
+        <p class="prices"><b>PRICE: 1,800 ETB</b></p>
+      </div>
+      <div class="product-card">
+        <img src="./Images/head set.jpg" alt="Headphones">
+        <h3>Headphones</h3>
+        <p>Brand: Apple, Model: Apple Headset, Wireless.</p>
+        <p class="prices"><b>PRICE: <s>3500 ETB</s> 3300 ETB</b></p>
+      </div>
+      
+      <div class="product-card">
+        <img src="./Images/Earphone.jpg" alt="Earphones">
+        <h3>Earphones</h3>
+        <p>RUGGA'S, Brand New Earphone</p>
+        <p class="prices"><b>PRICE: 250 ETB</b></p>
+      </div>
     </div>
+   </section>
+  
+  <!-- Others Section-->
+  <section class="products-section" id="Others">
+    <h2 class="section-title">Other Products</h2>
+    <div class="Others-section" id="Others">
 
-    <div class="phone-card">
-      <img src="../Images/sparkk1.jpg" alt="Phones" />
-      <p>
-        <b>Spark 30C</b><br />
-        storage 128/256 Gb<br />
-        Battery type charging 5000MAH <br />front camera 50 MP<br />
-        condition:brand new<br />
-      <p class="prices"><b>PRICE:<s>20,000 ETB</s> 19,500 ETB</b></p>
-      </p>
-    </div>
+      <div class="product-card">
+        <img src="./Images/Glass.png" alt="Earphones" />
+        <p>
+          <b>Glasses</b>
+          <p>Original smartphone glasses</p>
+        <p class="prices"><b>PRICE:200 ETB</b></p>
     
-  </div>
-  <!-- headset,cover and earphone page-->
-   <br>
-   <br>
-   <h1 style="text-align: center;"> other electronic devices </h1>
-   <br>
-   <br>
-  <div class="GlaCovEpho">
-    <div class="Glasses" id="Glasses">
-      <img class="hs-image" src="../Images/head set.jpg" alt="Glasses" />
-      <p>
-        <b>Brand:Apple </b><br />
-        Model:Apple Headset<br />
-        Type:Over-Ear<br />
-        Condition:Brand New<br />
-        Connectivity:Wireless<br>
-      <p class="prices"><b>PRICE:<s>3500ETB</s> 3300 ETB</b></p>
+      </div>
 
-      </p>
-    </div>
-    <div class="M-Covers" id="M-Covers">
-      <img src="../Images/cover1.jpg" alt="M-Covers" />
-      <p>
-        Brand:Samsung <br>
-        Type:Cases <br>
-        Color:blue <br>
-        Condition:Brand New <br>
-      <p class="prices"><b>PRICE:200 ETB</b></p>
-      </p>
-      </p>
-    </div>
-    <div class="Earphones" id="Earphoness">
-      <img src="../Images/Earphone.jpg" alt="Earphones" />
-      <p>
-        RUGGA'S <br>
-        የምርቱ ኮድ: RUGGA'S <br>
-        አቅርቦት: ለሽያጭ የቀረበ እቃ
-      <p class="prices"><b>PRICE:250 ETB</b></p>
-      </p>
+      <div class="product-card">
+        <img src="./Images/cover1.jpg" alt="M-Covers" />
+        <p>
+          Brand:Samsung <br>
+          Type:Cases <br>
+          Color:blue <br>
+          Condition:Brand New <br>
+        <p class="prices"><b>PRICE:150 ETB</b></p>
+        </p>
+        </p>
+      </div>
 
-      </p>
+      <div class="product-card" >
+        <img class="hs-image" src="./Images/I-pad.jpg" alt="Glasses" />
+        <p>
+          <b>Ipad </b><br />
+          Apple iPad Tablets <br>
+          Storage: 64 GB <br>
+        <p class="prices"><b>PRICE:<s>50,000ETB</s> 48,000 ETB</b><p>
+       </p>
+      </div>
+      
     </div>
-  </div>
-<br>
-<br>
+  </section>
+ 
+
   <!-- Information of the table-->
-  <div>
+  <div class="info-table">
     <h3>MORE INFORMATIN OF OUR PRODUCTS</h3>
   </div>
 
 <br>
 <br>
-  <div class="table">
+  <div class="table" id="Table">
     <table>
       <tr>
         <th style="width: 30%;">OUR PRODUCTS</th>
@@ -198,10 +214,10 @@
       <td>Earphone</td>
       <td>1,800ETB</td>
       <tr>
-        <td>Travel Charger</td>
-        <td>2024 GC</td>
-        <td>Charger</td>
-        <td>450 ETB</td>
+        <td>Ipad</td>
+        <td>2023 GC</td>
+        <td>Tablet</td>
+        <td>48,000 ETB</td>
       <tr>
         <td>Apple Headset</td>
         <td>2023 GC</td>
@@ -213,29 +229,32 @@
 <br>
 
   <!-- form of the order page-->
-  <div class="container" id="login-button">
-    <h1>For online orders fill the following information</h1>
-    <form id="registrationForm">
-      <label for="username">Name</label>
-      <input type="text" placeholder="Enter-your-name" , id="username" name="username" required>
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" placeholder="Enter-your-email" required>
+  <section class="order-section" id="login-button">
+    <div class="container">
+      <h2>Place Your Order</h2>
+      <form id="registrationForm">
+        <label for="username">Name</label>
+        <input type="text" id="username" name="username" placeholder="Enter your name" required>
 
-      <label for="Address">Your Address</label>
-      <input type="text" id="Address" name="Address" placeholder="Enter-your-Address" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-      <label for="Product">Product</label>
-      <input type="text" id="Product" name="product" placeholder="Enter-name-of-product-you-want" required>
+        <label for="Address">Address</label>
+        <input type="text" id="Address" name="Address" placeholder="Enter your address" required>
 
-      <label for="receiptInout">Upload Receipt of Payment</label>
-      <input type="file" id="receipt" name="Receipt" placeholder="Upload-Receipt-of-payment" required>
+        <label for="Product">Product</label>
+        <input type="text" id="Product" name="product" placeholder="Enter product name" required>
 
-      <button class="registration-button" type="submit">Order</button>
-    </form>
-  </div>
+        <label for="receipt">Upload Payment Receipt</label>
+        <input type="file" id="receipt" name="Receipt" required>
 
-  <section>
+        <button class="btn-submit" type="submit">Order Now</button>
+      </form>
+    </div>
+  </section>
+
+
 
     <!-- footer section-->
     <footer>
