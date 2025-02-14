@@ -1,7 +1,7 @@
 let currentProblem;
-let correctAnswers = 0; // Track the number of correct answers
-let timerInterval; // To store the timer interval
-let timeLeft = 5; // Time limit for each question (5 seconds)
+let correctAnswers = 0; 
+let timerInterval; 
+let timeLeft = 5;
 
 // Function to generate a random math problem with simpler numbers
 function generateProblem() {
@@ -10,11 +10,10 @@ function generateProblem() {
   let num1, num2;
 
   if (operation === "/") {
-    // Ensure division problems result in whole numbers
-    num2 = Math.floor(Math.random() * 5) + 1; // Smaller numbers for simplicity
-    num1 = num2 * (Math.floor(Math.random() * 5) + 1); // num1 is a multiple of num2
+    num2 = Math.floor(Math.random() * 5) + 1;
+    num1 = num2 * (Math.floor(Math.random() * 5) + 1);
   } else {
-    num1 = Math.floor(Math.random() * 10) + 1; // Smaller numbers for simplicity
+    num1 = Math.floor(Math.random() * 10) + 1; 
     num2 = Math.floor(Math.random() * 10) + 1;
   }
 
@@ -91,7 +90,7 @@ function startGame() {
 
 // Function to start the countdown timer
 function startTimer() {
-  clearInterval(timerInterval); // Clear any existing timer
+  clearInterval(timerInterval); 
   timerInterval = setInterval(() => {
     timeLeft--;
     document.getElementById("timer").innerText = timeLeft;
@@ -104,32 +103,32 @@ function startTimer() {
       ).innerText = `Time's up! The correct answer was ${currentProblem.correctAnswer}. You answered ${correctAnswers} questions correctly.`;
       document.getElementById("continue").style.display = "block";
     }
-  }, 1000); // Update every second
+  }, 1000); 
 }
 
 // Function to end the game
 function endGame() {
-  clearInterval(timerInterval); // Stop the timer
+  clearInterval(timerInterval);
   document.getElementById("problem").innerText = "Thank you for playing!";
   document.getElementById("options").innerHTML = "";
   document.getElementById("continue").style.display = "none";
   document.getElementById(
     "result"
   ).innerText = `You answered ${correctAnswers} questions correctly.`;
-  document.getElementById("timer").style.display = "none"; // Hide the timer
+  document.getElementById("timer").style.display = "none";
 }
 
 // Function to check the user's answer
 function checkAnswer(selectedOption) {
-  clearInterval(timerInterval); // Stop the timer
+  clearInterval(timerInterval); 
   if (parseInt(selectedOption) === currentProblem.correctAnswer) {
     // Use parseInt for strict comparison
     document.getElementById("result").innerText = "Correct!";
     document.getElementById("result").style.color = "green";
-    correctAnswers++; // Increment the correct answer counter
+    correctAnswers++; 
     setTimeout(() => {
-      startGame(); // Generate a new problem after a short delay
-    }, 1000); // Delay for 1 second before showing the next question
+      startGame(); 
+    }, 1000);
   } else {
     document.getElementById(
       "result"
