@@ -71,6 +71,8 @@ if (isset($_POST['SIGNUP'])) {
 <body>
    <div class="box2">
     <h1>Register Here</h1>
+    <!-- Added greeting container -->
+    <div id="greeting" style="color: #fff; margin-bottom: 10px;"></div>
     <div class="err">
         <?php
         if (!empty($err)) {
@@ -83,8 +85,8 @@ if (isset($_POST['SIGNUP'])) {
     <?php
     echo $congra;
     ?>
-    <form action="signup.php" method="post">
-        <input type="text" name="firstname" placeholder="Enter firstname" required>
+    <form action="signup.php" method="post" id="signupForm">
+        <input type="text" name="firstname" id="firstname" placeholder="Enter firstname" required>
         <input type="text" name="lastname" placeholder="Enter lastname" required>
         <input type="email" name="email" placeholder="Enter email" required>
         <label>Gender</label>
@@ -96,5 +98,41 @@ if (isset($_POST['SIGNUP'])) {
         Already a member? <a href="login.php" style="color:#ffc107">LOGIN</a>
     </form>
    </div> 
+
+   <!-- AJAX Implementation -->
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const form = document.getElementById('signupForm');
+        const firstnameInput = document.getElementById('firstname');
+        const greetingDiv = document.getElementById('greeting');
+
+        firstnameInput.addEventListener('input', function() {
+            const firstname = this.value.trim();
+            if (firstname.length > 0) {
+                // Create AJAX request
+                const xhr = new XMLHttpRequest();
+                xhr.open('POST', 'signup.php', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4 && xhr.status === 200) {
+                        greetingDiv.innerHTML = `Hello ${firstname}, welcome to registration!`;
+                    }
+                };
+                
+                // Send only the firstname for greeting
+                xhr.send(`firstname=${encodeURIComponent(firstname)}`);
+            } else {
+                greetingDiv.innerHTML = '';
+            }
+        });
+
+        // Preserve original form submission
+        form.addEventListener('submit', function(e) {
+            // Let the form submit normally
+            return true;
+        });
+    });
+   </script>
 </body>
 </html>
