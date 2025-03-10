@@ -134,5 +134,7 @@ if (isset($_POST['SIGNUP'])) {
         });
     });
    </script>
+   <script src="../JS/script.js"></script>
+
 </body>
 </html>

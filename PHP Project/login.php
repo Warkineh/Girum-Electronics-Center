@@ -47,6 +47,7 @@ if(isset($_POST['LOGIN'])){
         <input type="submit" value="LOGIN" name="LOGIN">
         Not yet a member? <a href="signup.php" style="color:#ffc107">REGISTER</a>
     </form>
-   </div> 
+   </div>
+   <script src="../JS/script.js"></script> 
 </body>
 </html>

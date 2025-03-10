@@ -71,5 +71,8 @@ $page_title = "Homepage";
             <p>&copy; <?php echo date("Y"); ?> My Website. All rights reserved.</p>
         </div>
     </footer>
+    <script <script src="../JS/script.js"></script>
+
+
 </body>
 </html>
