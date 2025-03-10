@@ -12,7 +12,7 @@ $user = "";
 // Database Connection
 $conn = mysqli_connect("localhost", "root", "", "db");
 if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
+    die("Connection failed: " .mysqli_connect_error());
 }
 
 if (isset($_POST['SIGNUP'])) {
@@ -24,9 +24,12 @@ if (isset($_POST['SIGNUP'])) {
     $pass2 = mysqli_real_escape_string($conn, $_POST['pass2']);
 
     // Validation
-    if ($pass1 != $pass2) {
+    if (!preg_match("/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/", $pass1)) {
+        array_push($err, "Password must contain at least one letter, one number, one special character, and be at least 8 characters long");
+    }elseif ($pass1 != $pass2) {
         array_push($err, "The two passwords do not match!");
     }
+    
 
     $user_check_query = "SELECT * FROM users WHERE Firstname='$firstname' OR Email='$email' LIMIT 1";
     $result = mysqli_query($conn, $user_check_query);
@@ -40,13 +43,15 @@ if (isset($_POST['SIGNUP'])) {
         }
     }
 
+   
+
     // Finally register
     if (count($err) === 0) {
         // Store the password as plain text
         $query = "INSERT INTO users (Firstname, Lastname, Gender, Email, Passworrd) VALUES (?, ?, ?, ?, ?)";
         $stmt = $conn->prepare($query);
         if ($stmt) {
-            $stmt->bind_param("sssss", $firstname, $lastname, $gender, $email, $pass1); // Store plain text password
+            $stmt->bind_param("sssss", $firstname, $lastname, $gender, $email, $pass1);
             if ($stmt->execute()) {
                 $congra = "You are successfully registered! Please login";
             } else {
@@ -95,7 +100,7 @@ if (isset($_POST['SIGNUP'])) {
         <input type="password" name="pass1" placeholder="Enter password" required>
         <input type="password" name="pass2" placeholder="Confirm password" required>
         <input type="submit" value="SIGNUP" name="SIGNUP">
-        Already a member? <a href="login.php" style="color:#ffc107">LOGIN</a>
+        Already registered? <a href="login.php" style="color:#ffc107">LOGIN</a>
     </form>
    </div> 
 
@@ -116,7 +121,7 @@ if (isset($_POST['SIGNUP'])) {
                 
                 xhr.onreadystatechange = function() {
                     if (xhr.readyState === 4 && xhr.status === 200) {
-                        greetingDiv.innerHTML = `Hello ${firstname}, welcome to registration!`;
+                        greetingDiv.innerHTML = `Hello ${firstname}, welcome!`;
                     }
                 };
                 
