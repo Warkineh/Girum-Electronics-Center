@@ -51,6 +51,10 @@ nav ul li a {
 nav ul li a:hover {
     color: #1abc9c;
 }
+.welcome{
+    font-size: 50px;
+
+}
 
 /* Main Content Styles */
 main {
@@ -143,4 +147,78 @@ footer p {
     article h4 {
         font-size: 1.2rem;
     }
+}
+.thead{
+    text-align: center;
+    color: rgb(0, 208, 255);
+}
+
+/* Basic Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Table Header Styling */
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 12px 15px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Table Cell Styling */
+td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    color: #333;
+}
+
+/* Alternate Row Coloring */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover Effect on Rows */
+tr:hover {
+    background-color: #e0f7fa;
+    transition: background-color 0.3s ease;
+}
+
+/* Table Border Radius for First and Last Rows */
+tr:first-child th:first-child {
+    border-top-left-radius: 10px;
+}
+
+tr:first-child th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:last-child td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child td:last-child {
+    border-bottom-right-radius: 10px;
+}
+
+/* Add a subtle shadow to the table header */
+thead {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
