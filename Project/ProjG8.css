@@ -8,7 +8,6 @@
 /* body style */
 body {
   background-color: #b5bfe3;
-
 }
 
 /* headers style */
@@ -43,7 +42,7 @@ h1 {
 }
 
 .logo-wrapper {
-  width: 30%;
+  width: 25%;
 }
 
 .ul-wrapper {
@@ -80,7 +79,7 @@ h1 {
   width: 95%;
   height: 380px;
   margin: auto ;
-  background-image: url(../Images/home\ 1.jpg);
+  background-image: url(./Images/home\ 1.jpg);
   font-size: 25px;
   background-size: cover;
   margin-top: 10px;
@@ -115,23 +114,23 @@ h1 {
   animation: slideAnimation 20s infinite;
 }
 .slide1 {
-  background-image: url("../Images/home\ 1.jpg");
+  background-image: url("./Images/home\ 1.jpg");
   animation-delay: 0s;
 }
 .slide2 {
-  background-image: url("../Images/banner.jpg");
+  background-image: url("./Images/banner.jpg");
   animation-delay: 4s;
 }
 .slide3 {
-  background-image: url("../Images/apple.jpg");
+  background-image: url("./Images/apple.jpg");
   animation-delay: 8s;
 }
 .slide4 {
-  background-image: url("../Images/head\ set.jpg");
+  background-image: url("./Images/head\ set.jpg");
   animation-delay: 12s;
 }
 .slide5 {
-  background-image: url("../Images/Earphone.jpg");
+  background-image: url("./Images/Earphone.jpg");
   animation-delay: 16s;
 }
 
@@ -189,7 +188,7 @@ h1 {
 .Home {
   display: flex;
   width: 95%;
-  background-image: url(../Images/Home\ bg.jpg);
+  background-image: url(./Images/Home\ bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;
@@ -207,6 +206,9 @@ h1 {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   width: 100%;
+}
+.about-section{
+  justify-self: center;
 }
 
 /* Left Side: Image */
@@ -257,68 +259,75 @@ h1 {
 }
 
 
-/* style of phones page */
-.Phones-page {
-  width: 95%;
-  display: flex;
-  margin: auto;
+
+/* Products Section Styles */
+.products-section {
+  padding: 40px 20px;
+  background-color: #b6bbcd;
+  border: 3px solid rgb(92, 89, 75);
+  border-radius: 20px;
 }
 
-.Phones-page :hover {
+.section-title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c3e50;
+}
+
+.Phones-page, .Earphones-page, .Others-section {
+  width: 97%;
+  display:flex;
+  justify-content: space-between;
+  justify-self: center;
+  gap: 20px;
+}
+
+.product-card {
+  background-color: rgba(255, 255, 255, 0.349);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+ 
+
+}
+
+.product-card:hover {
   transform: translateY(-10px);
 }
 
-.Phone,
-.I-Samsung,
-.I-phone {
+.product-card img {
+ max-width: 100%;
+  border-radius: 10px;
+}
 
-  background-color: white;
+.product-card{
   width: 33%;
-  text-align: center;
-  margin: 20px;
 }
 
-.Phone img,
-.I-Samsung img,
-.I-phone img {
-  transition: 0.4s;
-  width: 100%;
+.section-title{
+  justify-self: center;
+  border: 5px solid #0015ff;
+  padding: 10px;
+  color: #162324;
+  background-color: #eea406;
+  border-radius: 20px;
+  font-size: 40px;
+ 
 }
 
-
-
-/* Style of Headset, Cover and Earphone */
-.GlaCovEpho {
-  display: flex;
-  width: 95%;
-  margin: auto;
-}
-
-.GlaCovEpho :hover {
-  transform: translateY(-10px);
-}
-
-.Glasses,
-.M-Covers,
-.Earphones {
-  border: 1px;
-  background-color: white;
-  width: 33%;
-  text-align: center;
-  margin: 10px;
-}
-
-.Glasses img,
-.M-Covers img,
-.Earphones img {
-  width: 100%;
-}
 
 /* style of table */
 .table {
   width: 90%;
   margin: auto;
   margin-bottom: 20px;
+}
+
+.info-table{
+  margin-top: 40px;
 }
 
 table,
@@ -371,64 +380,59 @@ text-decoration: none;
 }
 
 /* style for order form */
+
+.order-section {
+  padding: 50px 20px;
+  background-color: white;
+}
+
 .container {
-  text-align: center;
-  max-width: 400px;
-  margin: auto;
+  max-width: 500px;
+  margin: 0 auto;
   background-color: rgba(8, 226, 255, 0.8);
   padding: 20px;
-  border-radius:50px 0 50px 0;
+  border-radius: 50px 0 50px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
+.container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
 
 label {
   display: block;
-  margin-top: 5px;
+  margin-top: 10px;
+  font-weight: bold;
 }
-
 
 input {
-  width: 80%;
+  width: 100%;
   padding: 10px;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-bottom: 15px;
-  border: 1px solid #02071a;
-  border-radius: 100px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-.registration-button {
-  justify-content: center;
-  margin-top: 50px;
-  padding: 15px;
-  width: 50%;
-  background-color: #fd00ec;
-  color: rgb(25, 7, 222);
+.btn-submit {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 20px;
   border: none;
-  border-radius: 100px;
+  border-radius: 25px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #5a9fee;
+.btn-submit:hover {
+  background-color: #d62828;
 }
 
-p {
-  text-align: center;
-}
 
-a {
-  color: #007BFF;
-}
 
-a:hover {
-  text-decoration: underline;
-}
 
-.prices {
-  color: rgb(5, 255, 5);
-}
 
 /* style of footer */
 footer {
